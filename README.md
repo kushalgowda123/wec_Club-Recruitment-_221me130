@@ -108,6 +108,30 @@ Use the following credentials to login as an admin:
 
 Feel free to fork this project, make improvements, and submit pull requests!
 
-##screenshoots
-- ** Database
+## screenshot
+- **Database**
 <img width="1710" alt="Screenshot 2024-10-12 at 10 57 22 PM" src="https://github.com/user-attachments/assets/d2695177-8b9d-433e-b872-07e14e2a88b4">
+- **Homepage**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 50 53 AM" src="https://github.com/user-attachments/assets/eb2e7551-e754-4de9-9a98-560283f65c6a">
+- **studentlogin**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 51 10 AM" src="https://github.com/user-attachments/assets/28f6c983-d325-47c6-aa31-bea03d9e1325">
+- **studentregister**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 06 03 PM" src="https://github.com/user-attachments/assets/380b7876-6d31-471d-980c-d77dc2dda3aa">
+- **conveyorlogin**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 53 04 AM" src="https://github.com/user-attachments/assets/8c31c646-87f2-4f26-89d7-219dc48b4225">
+- **studetHome**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 51 33 AM" src="https://github.com/user-attachments/assets/e84fed90-0c6e-4e44-9074-ca8c435b811b">
+- **conveyortHome**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 10 53 PM" src="https://github.com/user-attachments/assets/9a201a71-b230-430b-8d56-6622d3e7f6da">
+- **adminlogin**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 12 16 PM" src="https://github.com/user-attachments/assets/44cfffb5-345e-43da-87ba-20821987dab2">
+- **adminhome**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 13 29 PM" src="https://github.com/user-attachments/assets/63c97ac1-7015-430b-8180-e59fb3871c86">
+- **Announcementadding**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 16 31 PM" src="https://github.com/user-attachments/assets/3bc1db4f-c4b9-4b19-a14e-66d3d3ad89e7">
+- **downloading csvfile of number students registered**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 17 20 PM" src="https://github.com/user-attachments/assets/38bad384-6ece-4fa4-bb64-6dfa4cebbb08">
+- **generalannouncement**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 20 16 PM" src="https://github.com/user-attachments/assets/c4562304-991d-4ff0-9c6f-2c2317723fc2">
+- **Registering for specific club**
+- <img width="1710" alt="Screenshot 2024-10-12 at 11 24 33 PM" src="https://github.com/user-attachments/assets/abfc4564-4e38-4abf-a5b7-903c7051412e">
