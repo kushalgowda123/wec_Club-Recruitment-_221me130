@@ -1,0 +1,120 @@
+<%- include('partials/header') %>
+
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #2575fc;
+            color: white;
+        }
+
+        .approve-btn,
+        .deny-btn {
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 2px;
+        }
+
+        .approve-btn {
+            background-color: #28a745;
+        }
+
+        .approve-btn:hover {
+            background-color: #218838;
+        }
+
+        .deny-btn {
+            background-color: #dc3545;
+        }
+
+        .deny-btn:hover {
+            background-color: #c82333;
+        }
+
+        .download-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+    <div class="container">
+        <h2>Pending Clubs for Approval</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Club Name</th>
+                    <th>Deadline</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% clubs.forEach(function(club) { %>
+                    <tr>
+                        <td>
+                            <%= club.clubname %>
+                        </td>
+                        <td>
+                            <%= club.date %>
+                        </td>
+                        <td>
+                            <form action="/approveClub" method="POST" style="display: inline-block;">
+                                <input type="hidden" name="clubId" value="<%= club.id %>">
+                                <button type="submit" class="approve-btn">Approve</button>
+                            </form>
+                            <form action="/denyClub" method="POST" style="display: inline-block;">
+                                <input type="hidden" name="clubId" value="<%= club.id %>">
+                                <button type="submit" class="deny-btn">Deny</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+
+        <a href="/numberofreg" class="download-btn">Click here to download the number of registrations</a>
+        <a href="/addAnnouncement" class="download-btn">click here to add the announcement </a>
+    </div>
+
+    <%- include('partials/footer') %>

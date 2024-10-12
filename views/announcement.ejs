@@ -1,0 +1,101 @@
+<%- include('partials/header') %>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #2575fc;
+            color: white;
+        }
+    </style>
+
+    <div class="container">
+        <h2>Manage Announcements</h2>
+
+        <!-- Form to add a new announcement -->
+        <form action="/addAnnouncement" method="POST">
+            <input type="text" name="title" placeholder="Enter announcement title" required>
+            <button type="submit">Add Announcement</button>
+        </form>
+
+        <!-- List of existing announcements -->
+        <td>
+            <%= announcements.id %>
+        </td>
+        <td>
+            <%= announcements.title %>
+        </td>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% announcements.forEach(function(announcement) { %>
+                    <tr>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+    </div>
+
+    <%- include('partials/footer') %>

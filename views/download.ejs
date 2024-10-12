@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+    <div class="container">
+        <h2>Download Club Registration Details</h2>
+
+        <a href="/downloadClubRegistrations/WEC" class="download-btn">Click here to download WEC registration</a>
+        <a href="/downloadClubRegistrations/IEEE" class="download-btn">Click here to download IEEE registration</a>
+        <a href="/downloadClubRegistrations/IET" class="download-btn">Click here to download IET registration</a>
+        <a href="/downloadClubRegistrations/KV" class="download-btn">Click here to download KV registration</a>
+        <a href="/downloadClubRegistrations/ISTE" class="download-btn">Click here to download ISTE registration</a>
+        <a href="/downloadClubRegistrations/PHOTOGRAPHY" class="download-btn">Click here to download PHOTOGRAPHY
+            registration</a>
+    </div>
+
+    <%- include('partials/footer') %>

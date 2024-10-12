@@ -1,0 +1,152 @@
+<%- include('partials/header') %>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .student {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #2575fc;
+            color: white;
+        }
+
+        td {
+            text-align: left;
+        }
+
+        .club-deadline {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .no-clubs {
+            color: #fff;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #2575fc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #6a11cb;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            color: #fff;
+            padding: 15px 0;
+        }
+    </style>
+
+    <main>
+        <div class="container">
+            <div class="student">
+                Welcome, <%= name %>
+            </div>
+
+            <div class="clubs">
+                <h1>Eligible Clubs</h1>
+
+                <% if (clubs.length> 0) { %>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Club Name</th>
+                                <th>Deadline</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% clubs.forEach(function(club) { %>
+                                <tr>
+                                    <td>
+                                        <a href="/clubs/<%= club.clubname.toLowerCase().replace(/\s+/g, '-') %>">
+                                            <%= club.clubname %>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <%= club.date %>
+                                    </td>
+                                </tr>
+                                <% }); %>
+                        </tbody>
+                    </table>
+                    <% } else { %>
+                        <div class="no-clubs">
+                            No clubs available at the moment.
+                        </div>
+                        <% } %>
+            </div>
+
+            <div class="button">
+                <button>click on the club name to register </button>
+            </div>
+        </div>
+    </main>
+
+    <%- include('partials/footer') %>

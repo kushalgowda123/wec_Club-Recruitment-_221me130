@@ -1,0 +1,119 @@
+<%- include('partials/header') %>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .portal-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px 60px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .portal-container h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .portal-container p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-group button {
+            background-color: #2575fc;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-group button:hover {
+            background-color: #6a11cb;
+        }
+
+        .btn-group a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: block;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+
+    <header>
+        <h1>College Club Recruitment Portal</h1>
+    </header>
+
+    <main>
+        <div class="portal-container">
+            <h1>Welcome</h1>
+            <p>Select your role to proceed.</p>
+
+            <div class="btn-group">
+                <button><a href="/logstd">Login as Student</a></button>
+                <button><a href="/regstd">Register as Student</a></button>
+                <button><a href="/logfac">Login as Conveyor</a></button>
+                <button><a href="/regfac">Register as Conveyor</a></button>
+                <button><a href="/admin">Login as Admin</a></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 College Club Recruitment Portal
+    </footer>

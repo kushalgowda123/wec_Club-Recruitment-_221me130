@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+    <div class="d-flex flex-column min-vh-100">
+        <div class="container mt-5 flex-grow-1">
+            <h1 class="text-center mb-4">Login as student</h1>
+
+            <div class="row justify-content-center">
+                <!-- Login Form -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 rounded">
+                        <div class="card-body p-4">
+                            <!-- Makes POST request to /loginstd route -->
+                            <form action="/logstd" method="POST">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" name="name" placeholder="Enter your email"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" name="password"
+                                        placeholder="Enter your password" required>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-dark btn-block">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('partials/footer') %>
