@@ -108,3 +108,6 @@ Use the following credentials to login as an admin:
 
 Feel free to fork this project, make improvements, and submit pull requests!
 
+##screenshoots
+- ** Database
+<img width="1710" alt="Screenshot 2024-10-12 at 10 57 22 PM" src="https://github.com/user-attachments/assets/d2695177-8b9d-433e-b872-07e14e2a88b4">
