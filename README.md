@@ -135,5 +135,4 @@ Feel free to fork this project, make improvements, and submit pull requests!
 - <img width="1710" alt="Screenshot 2024-10-12 at 11 20 16 PM" src="https://github.com/user-attachments/assets/c4562304-991d-4ff0-9c6f-2c2317723fc2">
 - **Registering for specific club**
 - <img width="1710" alt="Screenshot 2024-10-12 at 11 24 33 PM" src="https://github.com/user-attachments/assets/abfc4564-4e38-4abf-a5b7-903c7051412e">
-video:
-https://youtu.be/Jo31FVySeMw
+
